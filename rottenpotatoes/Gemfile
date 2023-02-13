@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'protected_attributes'
 
+gem 'cucumber'
 
 group :development, :test do
   gem 'sqlite3'
