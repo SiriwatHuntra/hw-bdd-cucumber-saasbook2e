@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'protected_attributes'
 
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
@@ -26,4 +27,10 @@ end
 
 group :production do
   gem 'pg'
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not mandatory, but highly recommended
+  gem 'database_cleaner'
 end
